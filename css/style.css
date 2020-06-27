@@ -134,7 +134,7 @@ nav a:hover {
 }
 
 footer {
-    margin: 0 auto ;
+    margin: 0 auto;
     text-align: center;
     background: #f0f0f5;
     padding: 40px 0;
@@ -152,52 +152,83 @@ footer img {
 #contato {
     width: 100%;
     background: #222222;
+    color: #f0f0f5;
 }
 
-#contato form {
-  width: 90%;
-  margin: 1200px;
-  margin: 0 auto;
-  padding: 3em 0;
-  color: #f0f0f5;
-}
-form legend {
-    font-size: 2.0em;
+#contato .container {
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 1.5em;
+    padding: 3em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contato  h2{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1.5em ;
+}
+#contato .container form {
+    width: 48%;
+    margin-right: 2%;
 }
 
-form fieldset{
+#contato .container form legend {
+    font-size: 1.4em;
+    margin: 0 auto;
+    padding-bottom: 1.2em;
+}
+
+#contato .container form fieldset {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin: 0 auto;
 }
 
-form fieldset input, textarea{
+#contato .container form fieldset input, textarea {
     width: 100%;
     padding: 0.5em 0.5em;
     font-size: 20px;
     margin: 10px 0;
     border-radius: 10px;
     background: #4b4b4b;
-    outline: none; /*linhas em volta do input*/
+    outline: none;
+    /*linhas em volta do input*/
     border: none;
     color: #b6b6b6;
 }
 
-form fieldset button {
+button {
     width: 250px;
     height: 58px;
     text-align: center;
     padding: 0.3em;
-    margin: 1em 0 1em auto; /*alinhamento a direito*/
+    margin: 1em 0 1em auto;
+    /*alinhamento a direito*/
     font-size: 1.2em;
     background: #222222;
     border-radius: 10px;
-    outline: none; /*linha ao redor do input*/
+    outline: none;
+    /*linha ao redor do input*/
     border: #b6b6b6 solid 1px;
     color: #f0f0f5;
+}
+button:hover{
+    background: #f0f0f5;
+    color: #222222;
+}
+table{
+    width: 48%;
+    margin-left: 2%;
+}
+thead{
+    background: #4b4b4b;
+}
+
+th,td{
+    border: solid 1px #000000;
+    padding: 8px 15px;
+    text-align: center;
 }
 /*responsividade*/
 
