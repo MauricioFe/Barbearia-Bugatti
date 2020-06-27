@@ -134,11 +134,10 @@ nav a:hover {
 }
 
 footer {
-    margin: 40px auto 0;
+    margin: 0 auto ;
     text-align: center;
     background: #f0f0f5;
     padding: 40px 0;
-    height: 250px;
 }
 
 footer img {
@@ -156,35 +155,33 @@ footer img {
 }
 
 #contato form {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3em 0;
-    color: #f0f0f5;
-    display: flex;
+  width: 90%;
+  margin: 1200px;
+  margin: 0 auto;
+  padding: 3em 0;
+  color: #f0f0f5;
 }
-
 form legend {
     font-size: 2.0em;
     margin: 0 auto;
     padding-bottom: 1.5em;
 }
 
-form fieldset {
+form fieldset{
     display: flex;
-    width: 60%;
-    margin:  0 auto;
     flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
 }
 
-form fieldset input, textarea {
+form fieldset input, textarea{
     width: 100%;
     padding: 0.5em 0.5em;
     font-size: 20px;
     margin: 10px 0;
     border-radius: 10px;
     background: #4b4b4b;
-    outline: none;
+    outline: none; /*linhas em volta do input*/
     border: none;
     color: #b6b6b6;
 }
@@ -202,7 +199,6 @@ form fieldset button {
     border: #b6b6b6 solid 1px;
     color: #f0f0f5;
 }
-
 /*responsividade*/
 
 @media screen and (max-width:768px) {
