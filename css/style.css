@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -98,17 +98,23 @@ nav a:hover {
 
 .produtos li {
     text-align: center;
+    background: linear-gradient(45deg, rgba(143, 143, 143, 0.5), #8b8b8b), url('../img/fundo-card.jpg');
     width: 30%;
     padding: 30px 20px;
     height: 400px;
     box-sizing: border-box;
-    border: 2px solid #000000;
+    box-shadow: 0 5px 8px 0 rgba(155, 155, 155, 0.2);
     border-radius: 10px;
 }
 
 .produtos h2 {
     font-weight: bold;
     font-size: 25px !important;
+}
+
+.produtos li img {
+    width: 220px;
+    height: 220px;
 }
 
 .produto-descricao {
@@ -235,19 +241,18 @@ th, td {
 /*responsividade*/
 
 @media screen and (max-width:768px) {
-    .caixa{
+    .caixa {
         flex-direction: column;
         justify-content: initial;
     }
-
-    #sobre div{
+    #sobre div {
         flex-direction: column;
     }
     #se-produtos h2, #sobre .titulo-principal {
         font-size: 33px;
         margin: 0 1em 5%;
     }
-    .produtos{
+    .produtos {
         flex-direction: column;
     }
     #sobre div p {
@@ -263,20 +268,19 @@ th, td {
         width: 80%;
         margin: 2em auto;
     }
-    .produtos li img{
+    .produtos li img {
         width: 80%;
     }
-    #contato .container{
+    #contato .container {
         flex-direction: column;
     }
-    #contato .container form, table{
+    #contato .container form, table {
         width: 98%;
         margin: 2%;
     }
-    button{
+    button {
         width: 150px;
     }
-
 }
 
 @media (max-width:425px) {
